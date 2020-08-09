@@ -117,4 +117,5 @@ for name, model in training_model.items():
 df = pd.DataFrame(list(zip(model_name, model_params, score)), columns=['Model', 'Parameters', 'Score'])
 
 # Saving Model in a file
-joblib.dump(models['SVM'], 'Person_Classification_SVM_MODEL_JOblib')
+joblib.dump(models['SVM'], 'Person_Classification_SVM_MODEL_JOblib.pkl')
+print('Model saved as Person_Classification_SVM_MODEL_JOblib.pkl')
